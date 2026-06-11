@@ -1,7 +1,7 @@
 # Audit Data Complet d'une Marketplace E-commerce
 
 ## Contexte du projet
-Ce projet a été réalisé dans le cadre du module **Traitement de Données**. L'objectif est de mener une analyse approfondie de l'activité de la marketplace brésilienne **Olist** afin de proposer des recommandations business concrètes basées sur des indicateurs fiables.
+Ce projet a été réalisé dans le cadre du module **Traitement de Données**. L'objectif est d'analyser l'activité de la marketplace brésilienne **Olist** afin d'en tirer des recommandations business concrètes à partir d'indicateurs fiables.
 
 L'analyse porte sur environ 100 000 commandes réalisées entre 2016 et 2018.
 
@@ -12,27 +12,25 @@ L'analyse porte sur environ 100 000 commandes réalisées entre 2016 et 2018.
 - Étudier la rentabilité des catégories de produits.
 
 ## Structure du projet
-Le projet est structuré autour d'un notebook principal : `project_notebook.ipynb`.
-Il suit une méthodologie en 5 étapes :
-1. **Étape 1** : Chargement et exploration des données brutes.
-2. **Étape 2** : Nettoyage rigoureux et construction de la table finale d'analyse.
-3. **Étape 3** : Construction des indicateurs et analyse globale (CA, panier moyen, évolution mensuelle).
-4. **Étape 4** : Analyses métier approfondies (Satisfaction, Logistique, Géographie).
-5. **Étape 5** : Synthèse business et recommandations stratégiques.
+- `project_notebook.ipynb` : notebook principal d'analyse.
+- `data/raw/` : jeux de données Olist bruts.
+- `data/processed/` : tables préparées ou exportées, dont `df_final.csv`.
+- `reports/figures/` : graphiques et schémas générés par le notebook.
 
 ## Technologies utilisées
-- **Python 3**
-- **Pandas** : Manipulation et analyse de données.
-- **NumPy** : Calculs numériques.
-- **Matplotlib** & **Seaborn** : Visualisation de données.
+- Python 3
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
 ## Dataset
 Le dataset utilisé est disponible publiquement sur Kaggle : Brazilian E-Commerce Public Dataset by Olist.
 
 ## Installation
 1. Clonez ce dépôt.
-2. Assurez-vous d'avoir installé les dépendances nécessaires :
+2. Installez les dépendances nécessaires :
    ```bash
    pip install pandas numpy matplotlib seaborn
    ```
-3. Placez les fichiers CSV d'Olist à la racine du projet et lancez le notebook.
+3. Laissez les fichiers CSV dans `data/raw/`, puis lancez `project_notebook.ipynb`.
